@@ -11,6 +11,7 @@
     "require": {
         "php": "^8.2",
         "ext-gd": "*",
+        "ext-zip": "*",
         "barryvdh/laravel-dompdf": "^3.1",
         "guzzlehttp/guzzle": "^7.9",
         "itsgoingd/clockwork": "^5.3",
@@ -76,7 +77,8 @@
     },
     "config": {
         "platform": {
-            "php": "8.2.0"
+            "php": "8.2.0",
+            "php-64bit": "8.2.0"
         },
         "optimize-autoloader": true,
         "preferred-install": "dist",
