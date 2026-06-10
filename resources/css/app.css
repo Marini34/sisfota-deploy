@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+font-family: "inter Inter","ui-sans-serif","system-ui","-apple-system","Segoe UI","Roboto","Helvetica",
+"Neue","Arial","Noto Sans","sans-serif","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji",
+"sans-serif";
+}
+
+.minicard-w {
+    width: 100%;
+}
+
+@media (min-width: 720px) {
+    .minicard-w {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .minicard-w {
+        width: 32%;
+    }
+}
+
+.bg-main {
+    background-color:#08133E;
+}
+
+.bg-second{
+    background-color:#FCB900;
+}
+
+.hover-bg-second:hover{
+    background-color:#FCB900;
+    border-radius: 0.375rem;
+    color: black;
+}
+
+.miniscrollbar::-webkit-scrollbar {
+width: 5px;
+height: 5px;
+}
+
+.miniscrollbar::-webkit-scrollbar-thumb {
+background: #c5c5c5;
+border-radius: 10px;
+}
+
+.modal-content {
+margin: 0;
+padding: 0;
+/* Properti lain yang diperlukan untuk menghilangkan pengaruh dari div sebelumnya */
+}
+
+/* Tailwind Override */
+
+.trix-editor h1 {
+font-size: 1.25rem !important;
+line-height: 1.25rem !important;
+margin-bottom: 1rem;
+font-weight: 600;
+}
+
+.trix-editor a:not(.no-underline) {
+text-decoration: underline;
+}
+
+.trix-editor a:visited {
+color: green;
+}
+
+.trix-editor ul {
+list-style-type: disc;
+padding-left: 1rem;
+}
+
+.trix-editor ol {
+list-style-type: decimal;
+padding-left: 1rem;
+}
+
+.trix-editor pre {
+display: inline-block;
+width: 100%;
+vertical-align: top;
+font-family: monospace;
+font-size: 1.5em;
+padding: 0.5em;
+white-space: pre;
+background-color: #eee;
+overflow-x: auto;
+}
+
+.trix-editor blockquote {
+border: 0 solid #ccc;
+border-left-width: 0px;
+border-left-width: 0.3em;
+margin-left: 0.3em;
+padding-left: 0.6em;
+}
+
+.trix-content ol li {
+list-style: decimal;
+margin-left: 1em; }
+.trix-content ul li {
+list-style: disc;
+margin-left: 1em; }
+
