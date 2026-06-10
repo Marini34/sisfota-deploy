@@ -112,7 +112,7 @@ Route::group(['prefix' => 'mahasiswa', 'middleware' => ['role:mahasiswa', 'web']
     Route::get('/sidang', [SidangController::class, 'viewIndex'])->name('view.sidang');
     Route::post('/sidang/daftar', [SidangController::class, 'storePendaftaran'])->name('store.sidang');
     Route::get('/sidang/hasil/{slug}', [SidangController::class, 'viewHasil'])->name('view.sidang.hasil');
-    Route::get('/sidang/detail/{slug}', [SidangController::class, 'viewDetail'])->name('view.sidang.hasil');
+    Route::get('/sidang/detail/{slug}', [SidangController::class, 'viewDetail'])->name('view.sidang.detail');
     Route::get('/sidang/ubah/{slug}', [SidangController::class, 'viewubah'])->name('view.sidang.ubah');
     Route::post('/sidang/ubah/{slug}/store', [SidangController::class, 'storeUbah'])->name('store.sidang.ubah');
     Route::post('/sidang/revisi/{slug}', [SidangController::class, 'uploadFileTA'])->name('store.revisi.sidang');
