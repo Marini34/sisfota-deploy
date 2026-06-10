@@ -102,7 +102,7 @@ Route::group(['prefix' => 'mahasiswa', 'middleware' => ['role:mahasiswa', 'web']
     Route::get('/semhas', [SemhasController::class, 'viewIndex'])->name('view.semhas');
     Route::post('/semhas/daftar', [SemhasController::class, 'storePendaftaran'])->name('store.semhas');
     Route::get('/semhas/hasil/{slug}', [SemhasController::class, 'viewHasil'])->name('view.semhas.hasil');
-    Route::get('/semhas/detail/{slug}', [SemhasController::class, 'viewDetail'])->name('view.semhas.hasil');
+    Route::get('/semhas/detail/{slug}', [SemhasController::class, 'viewDetail'])->name('view.semhas.detail');
     Route::get('/semhas/ubah/{slug}', [SemhasController::class, 'viewubah'])->name('view.semhas.ubah');
     Route::post('/semhas/ubah/{slug}/store', [SemhasController::class, 'storeUbah'])->name('store.semhas.ubah');
     Route::post('/semhas/revisi/{slug}', [SemhasController::class, 'uploadRevisi'])->name('store.revisi.semhas');
